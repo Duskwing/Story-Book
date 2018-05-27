@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Story Book</title>
+
+    <!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+<!-- normal script imports etc  -->
+<script src="jquery/jquery-1.12.4.js"></script>    
+<script src="jquery/jquery-ui.js"></script>    
+
+<link rel="stylesheet" href="jquery/jquery-ui.css">
+
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
+
+
+    <meta charset="UTF-8">
+
+    
+    <title>Create Story!</title>
+
+</head>
+
+<body>
+
+    <div id='createStoryImageDiv'>
+        <label for="FileUpload" id="labelForUpload" style=" font-family: Arial, Helvetica, sans-serif;" >Choose an image</label>
+        <input type='file' id='FileUpload'/>
+        <img id="picture" alt="" src="error" onerror="this.style.display='none'" />
+    </div>
+    <div id="createStoryTags">
+            <label style="margin-left: 41px;" for="createStoryTitle">Title:</label>
+            <input type="text" id="createStoryTitle" size="15" style="font:15px arial,serif;" />
+    
+            <label style="margin-left: 39px;" for="createStorySubject">Subject:</label>
+            <input type="text" id="createStorySubject" size="15" style="font:15px arial,serif;" />
+    
+            <label style="margin-left: 30px;" for="createStoryEvent">Event:</label>
+            <input type="text" id="createStoryEvent" size="15" style="font:15px arial,serif;" />
+    
+            <label style="margin-left: 30px;" for="createStorySituation">Situation:</label>
+            <input type="text" id="createStorySituation" size="15" style="font:15px arial,serif;" />
+    
+    </div>
+    <div id='createStoryPeople' class="ui-widget">
+            <Button class="btn btn-primary" style="width:156px; margin-top: 5px;font:17px arial,serif;position: absolute;top: 4px;" type='submit' id='createPerson' onClick="createPersonTextBox()">Add Person</Button>
+            <Button class="btn btn-primary" style="width:156px; font:17px arial,serif;position: absolute;top: 355px;" type='submit' id='createStorySubmit' onClick="createStory()">Create Story</Button>
+            <div id='createStoryPeopleContent' class="ui-widget">
+
+            </div>
+
+        
+
+    </div>
+    <div id='createStoryStories'> 
+
+        
+          <Button class="btn btn-primary" style="width:156px; font:17px arial,serif;" type='submit' id='createStory' onClick="createStoryTextBox()">Add Story</Button>
+
+    </div>
+
+    <script src="./createStory.js"></script>
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+    </script>
+</body>
+
+</html>

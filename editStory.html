@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Story Book</title>
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- normal script imports etc  -->
+    <script src="jquery/jquery-1.12.4.js"></script>    
+    <script src="jquery/jquery-ui.js"></script>    
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+</head>
+
+<body>
+
+    <div id='editStoryImageDiv'>
+
+        <img id="editStoryPicture" src="#" />
+    </div>
+    <div id="editStoryTags"></div>
+
+    <div id='editStoryPeople'>
+      <Button class="btn btn-primary" style="width:156px;font:17px arial,serif;position: absolute;top: 355px;" type='submit' id='editStorySubmit' onClick="editStory()">Edit Story</Button>
+      <div id='editStoryPeopleContent'></div>
+    </div>
+
+    
+    <div id='editStoryStory'> 
+ 
+
+    </div>
+
+<!--
+  <div id='masterDivIndex'>
+  <div id='indexImageDiv'>
+    <img id="pictureIndex" src="#" alt="your image" />
+  </div>
+  <div id='indexStory'>
+
+    <input ondblclick="editIndexTextBox()" onfocusout="editIndexTextBox2()" type="text" id="indexStoryTextBox" readonly="readonly">
+  </div>
+
+  <div id='indexPeople'>
+    <h2 id='indexPerson'></h2>
+  </div>
+</div>-->
+
+  <script src="./editStory.js"></script>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Story Book</title>
+
+    <!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+<!-- normal script imports etc  -->
+<script src="jquery/jquery-1.12.4.js"></script>    
+<script src="jquery/jquery-ui.js"></script>    
+<script src="bootstrap/bootstrap.min.js"></script>  
+<script src="bootstrap/bootstrap-multiselect.js"></script>  
+<link rel="stylesheet" href="jquery/jquery-ui.css">
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/bootstrap-multiselect.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script src="./library.js"></script>
+<!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
+    
+  </head>
+  <body>
+    
+      <input type="text" id='search' onkeyup="eventKey(event)" size="25" style="height:39px;font-size: 22px;margin-right: 10px;">
+
+      <select onchange="listImages()" size="6" name="options" multiple="multiple" id="options">
+        <option selected="selected" value="People">People</option>
+        <option selected="selected" value="Story">Stories</option>
+        <option selected="selected" value="Title">Title</option>
+        <option selected="selected" value="Subject">Subject</option>
+        <option selected="selected" value="Event">Event</option>
+        <option selected="selected" value="Situation">Situation</option>
+    </select>   
+
+        <Button onclick="editStory(this.id)" class="btn btn-primary" style="width:130px;margin-left: 10px;" >Edit</Button>
+        <Button onclick="deleteStory(this.id)" class="btn btn-primary" style="width:130px;margin-left: 10px;">Delete</Button>
+
+    <div id='libraryFrame'></div> 
+
+    <script>
+
+      listImages();
+
+    </script>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+      
+    </script>
+  </body>
+</html>

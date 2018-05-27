@@ -1,0 +1,39 @@
+{
+  "name": "story-book",
+  "version": "1.0.0",
+  "description": "A book of stories",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "story",
+    "book"
+   
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-builder": "^20.14.7",
+    "electron-rebuild": "^1.7.3"
+  },
+  "dependencies": {
+    "ba64": "^3.0.9",
+    "electron-contextmenu-middleware": "^1.0.3",
+    "electron-image-menu": "^2.0.0",
+    "electron-save-file": "^1.0.2",
+    "sqlite3": "https://github.com/mapbox/node-sqlite3/tarball/master"
+  },
+  "build": {
+    "appId": "storybook",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "icon":"storybook.png"
+  }
+}

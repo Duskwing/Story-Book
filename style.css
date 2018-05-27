@@ -1,0 +1,221 @@
+body{
+    background: #8b888c;
+}
+#createStoryImageDiv {
+    /*border: 1px solid powderblue;*/
+    width: 580px;
+    height: 326.25px;
+    float: left;
+}
+
+#createStoryStories {
+    font-family: Arial, Helvetica, sans-serif;
+    /*border: 1px solid powderblue;*/
+    width: 98%;
+    height: 135px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+#createStoryPeople {
+    /*border: 1px solid powderblue;*/
+    width: 165px;
+    height: 370px;
+    float: right;
+    padding: 3px;
+    /*background:#f00;*/
+    
+}
+
+#createStorySubmitDiv {
+    /*border: 1px solid powderblue;*/
+    position: absolute;
+    bottom: 0;
+}
+
+#createStoryPeopleContent {
+    height: 310px;
+    overflow: auto;
+    /*background:#fff;*/
+    position: absolute;
+    top: 40px;
+}
+
+#createStoryTags {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 356px;
+    /* border: 1px solid powderblue;*/
+    width: 530px;
+    height: 60px;
+}
+
+#indexImageDiv {
+    /*border: 1px solid powderblue;*/
+    width: 580px;
+    height: 326.25px;
+    float: left;
+}
+
+#indexStories {
+    font-family: Arial, Helvetica, sans-serif;
+    /*border: 1px solid powderblue;*/
+    width: 98%;
+    height: 145px;
+    position: absolute;
+    bottom: 0;
+}
+
+#indexPeople {
+    /*border: 1px solid powderblue;*/
+    width: 165px;
+    height: 370px;
+    float: right;
+    padding: 3px;
+    /*background:#f00;*/
+}
+
+#indexPeopleContent {
+    height: 340px;
+    overflow: auto;
+    /* background:#fff;*/
+    position: absolute;
+    top: 40px;
+}
+
+#indexTags {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 340px;
+    /* border: 1px solid powderblue;*/
+    width: 530px;
+    height: 60px;
+}
+
+#editStoryImageDiv {
+    /*border: 1px solid powderblue;*/
+    width: 580px;
+    height: 326.25px;
+    float: left;
+}
+
+#editStoryStory {
+    font-family: Arial, Helvetica, sans-serif;
+    /*border: 1px solid powderblue;*/
+    width: 99%;
+    height: 135px;
+    position: absolute;
+    bottom: 0;
+}
+
+#editStoryPeople {
+    /*border: 1px solid powderblue;*/
+    width: 165px;
+    height: 370px;
+    float: right;
+    padding: 3px;
+}
+
+#editStoryPeopleContent {
+    height: 310px;
+    overflow: auto;
+    /*background:#fff;*/
+    position: absolute;
+    top: 40px;
+}
+
+#editStoryTags {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 350px;
+    /*border: 1px solid powderblue;*/
+    width: 530px;
+    height: 60px;
+}
+/*
+#libraryOptions {
+    position: relative;
+    border: 1px solid powderblue;
+    column-count: 2;
+    column-gap: 100px;
+    height: 100px;
+    overflow-y: hidden;
+}*/
+
+#libraryFrame {
+    margin-top: 17px;
+    margin-left: 14px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    /*background: #8b888c;*/
+}
+
+#libraryMasterDiv{
+    /*background-color: #8b888c;*/
+
+    /*padding: 1em;*/
+    max-width:100%;
+    height:100vh;
+    /*height:100%;*/
+    /*width:100%;*/
+    /*margin: auto;*/
+    box-sizing:border-box;
+}
+
+#FileUpload{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn-primary {
+    color: black;
+    background-color: #428bca;
+    border-color: #357ebd
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #285e8e
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #428bca;
+    border-color: #357ebd
+}
+
+.btn-primary .badge {
+    color: #428bca;
+    background-color: #fff
+}
